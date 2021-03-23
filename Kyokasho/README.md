@@ -6,9 +6,70 @@
 
 ## 使用
 
-| 名称 | 链接 | CDN  |
-| ---- | ---- | ---- |
-|      |      |      |
+| 名称                                                         | 链接                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [UDDigiKyokashoN-R](https://github.com/45921/cdn-font/tree/main/Kyokasho/UDDigiKyokashoN-R) | [CSS Raw](https://github.com/45921/cdn-font/blob/main/Kyokasho/UDDigiKyokashoN-R/UDDigiKyokashoN-R.css) |
+| [UDDigiKyokashoNP-R](https://github.com/45921/cdn-font/tree/main/Kyokasho/UDDigiKyokashoNP-R) | [CSS Raw](https://github.com/45921/cdn-font/blob/main/Kyokasho/UDDigiKyokashoNP-R/UDDigiKyokashoNP-R.css) |
+
+当然，你可以手动引入通过 CDN 加载文件的代码：
+
+### UDDigiKyokashoN-R
+
+#### jsDelivr
+
+直接引用 CSS：`https://cdn.jsdelivr.net/gh/45921/cdn-font@main/Kyokasho/UDDigiKyokashoN-R/UDDigiKyokashoN-R.css`
+
+或者手动加载字体文件：
+
+```css
+@font-face {
+  font-family: "UDDigiKyokashoN-R";
+  src: url("https://cdn.jsdelivr.net/gh/45921/cdn-font@main/Kyokasho/UDDigiKyokashoN-R/UDDigiKyokashoN-R.woff2") format("woff2"),
+       url("https://cdn.jsdelivr.net/gh/45921/cdn-font@main/Kyokasho/UDDigiKyokashoN-R/UDDigiKyokashoN-R.woff") format("woff"),
+       url("https://cdn.jsdelivr.net/gh/45921/cdn-font@main/Kyokasho/UDDigiKyokashoN-R/UDDigiKyokashoN-R.ttf") format("truetype"),
+       url("https://cdn.jsdelivr.net/gh/45921/cdn-font@main/Kyokasho/UDDigiKyokashoN-R/UDDigiKyokashoN-R.eot") format("embedded-opentype"),
+       url("https://cdn.jsdelivr.net/gh/45921/cdn-font@main/Kyokasho/UDDigiKyokashoN-R/UDDigiKyokashoN-R.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+```
+
+#### Gitee
+
+直接引用 CSS：`https://shiroha.gitee.io/cdn-font/Kyokasho/UDDigiKyokashoN-R/UDDigiKyokashoN-R.css`
+
+#### Github
+
+直接引用 CSS：`https://gh.shiraha.cn/cdn-font/Kyokasho/UDDigiKyokashoN-R/UDDigiKyokashoN-R.css`
+
+### UDDigiKyokashoNP-R
+
+#### jsDelivr
+
+直接引用 CSS：`https://cdn.jsdelivr.net/gh/45921/cdn-font@main/Kyokasho/UDDigiKyokashoNP-R/UDDigiKyokashoNP-R.css`
+
+或者手动加载字体文件：
+
+```css
+@font-face {
+  font-family: "UDDigiKyokashoN-R";
+  src: url("https://cdn.jsdelivr.net/gh/45921/cdn-font@main/Kyokasho/UDDigiKyokashoNP-R/UDDigiKyokashoNP-R.woff2") format("woff2"),
+       url("https://cdn.jsdelivr.net/gh/45921/cdn-font@main/Kyokasho/UDDigiKyokashoNP-R/UDDigiKyokashoNP-R.woff") format("woff"),
+       url("https://cdn.jsdelivr.net/gh/45921/cdn-font@main/Kyokasho/UDDigiKyokashoNP-R/UDDigiKyokashoNP-R.ttf") format("truetype"),
+       url("https://cdn.jsdelivr.net/gh/45921/cdn-font@main/Kyokasho/UDDigiKyokashoNP-R/UDDigiKyokashoNP-R.eot") format("embedded-opentype"),
+       url("https://cdn.jsdelivr.net/gh/45921/cdn-font@main/Kyokasho/UDDigiKyokashoNP-R/UDDigiKyokashoNP-R.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+```
+
+#### Gitee
+
+直接引用 CSS：`https://shiroha.gitee.io/cdn-font/Kyokasho/UDDigiKyokashoNP-R/UDDigiKyokashoNP-R.css`
+
+#### Github
+
+直接引用 CSS：`https://gh.shiraha.cn/cdn-font/Kyokasho/UDDigiKyokashoNP-R/UDDigiKyokashoNP-R.css`
 
 ## 关于 N / NP / NK 的说明
 
