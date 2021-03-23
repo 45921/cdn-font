@@ -1,0 +1,35 @@
+name: Automatically sync with Gitee
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-18.04
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v2
+        with:
+          ref: main
+
+      - name: Prepare SSH and Git
+        env:
+          ACTION_DEPLOY_KEY: ${{ secrets.GITEE_SYNC_KEY }}
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 700 ~/.ssh
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          ssh-keyscan gitee.com >> ~/.ssh/known_hosts
+          git config --global user.email "Sync_with_gitee@shiraha.moe"
+          git config --global user.name "Github Sync BOT"
+      - name: Push source to Gitee
+        run: |
+          git fetch --unshallow origin
+          git remote add gitee git@gitee.com:shiroha/cdn-images.git
+          git fetch gitee
+          git push -f gitee main
