@@ -20,15 +20,34 @@
 
 你可以从如下的公共 CDN 中引入 CSS 文件：
 
-- **jsDelivr**：`https://cdn.jsdelivr.net/gh/45921/cdn-font@main/DescretMono/DescretMono.css`
-- **Gitee**：`https://shiroha.gitee.io/cdn-font/DescretMono/DescretMono.css`
-- **Github**：`https://gh.shiraha.cn/cdn-font/DescretMono/DescretMono.css`
+- **jsDelivr**：
+  - `https://cdn.jsdelivr.net/gh/45921/cdn-font@main/DescretMono/DescretMono.css`
+  - `https://cdn.jsdelivr.net/gh/45921/cdn-font@main/DescretMono/cdn.css`
+- **Gitee**：
+  - `https://shiroha.gitee.io/cdn-font/DescretMono/DescretMono.css`
+  - `https://shiroha.gitee.io/cdn-font/DescretMono/cdn.css`
+- **Github**：
+  - `https://gh.shiraha.cn/cdn-font/DescretMono/DescretMono.css`
+  - `https://gh.shiraha.cn/cdn-font/DescretMono/cdn.css`
 
-这个文件是 [DescretMono.css](https://github.com/45921/cdn-font/blob/main/DescretMono/DescretMono.css)，是没有使用 `@import` 的版本；可以通过链接预览。
+第一个文件是 [DescretMono.css](https://github.com/45921/cdn-font/blob/main/DescretMono/DescretMono.css)，是没有使用 `@import` 的版本；可以通过链接预览。
 
-另提供使用 `@import` 的版本 [cdn.css](https://github.com/45921/cdn-font/blob/main/DescretMono/cdn.css)；可以通过链接预览，也可以通过修改公共 CDN 链接来引入
+另提供使用 `@import` 的版本 [cdn.css](https://github.com/45921/cdn-font/blob/main/DescretMono/cdn.css)；可以通过链接预览，也可以这些公共 CDN 链接来引入：
 
 #### 通过 CSS 代码
+
+你可以在你的网页里引入类似如下的代码：
+
+```css
+@charset "UTF-8";
+
+@import "https://${HOST_NAME}/DescretMono/DescretMono-Bold/partial.css";
+@import "https://${HOST_NAME}/DescretMono/DescretMono-BoldItalic/partial.css";
+@import "https://${HOST_NAME}/DescretMono/DescretMono-Italic/partial.css";
+@import "https://${HOST_NAME}/DescretMono/DescretMono-Regular/partial.css";
+```
+
+其中：`${HOST_NAME}` 的值可以是 `cdn.jsdelivr.net/gh/45921/cdn-font@main`、`shiroha.gitee.io/cdn-font` 或者 `gh.shiraha.cn/cdn-font`；
 
 ### 单独引入风格
 
