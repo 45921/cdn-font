@@ -42,6 +42,8 @@
 
 直接引用 CSS：`https://gh.shiraha.cn/cdn-font/Kyokasho/UDDigiKyokashoN-R/UDDigiKyokashoN-R.css`
 
+你也可以通过替换前缀的方法，向上面那样直接引用
+
 ### UDDigiKyokashoNP-R
 
 #### jsDelivr
